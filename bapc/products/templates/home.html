@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<table>
+    <tr>
+        <th>Tag</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Expired</th>
+        <th>Link</th>
+    </tr>
+{% for product in obj%}
+    <tr>
+        <td>{{product.tag}}</td>
+        <td>{{product.name}}</td>
+        <td>{{product.price}}</td>
+        <td>{{product.expired}}</td>
+        <td>{{product.link}}</td>
+    </tr>
+{% endfor %}
+</table>
+{% endblock %}
